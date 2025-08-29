@@ -114,6 +114,21 @@ main {
     border: 1.5px solid var(--blue-800);
 }
 
+.form-section .email-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.email-error {
+    color: var(--primary-red);
+    font-size: 0.9rem;
+    margin-left: auto;
+    float: none;
+    /* Đảm bảo không bị xuống dòng */
+    white-space: nowrap;
+}
+
 .form-section button {
     width: 100%;
     padding: 1rem 0;

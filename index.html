@@ -41,7 +41,10 @@
           <li>And much more!</li>
         </ul>
 
-        <label for="email"></label>Email address</label>
+        <div class="email-label-row">
+          <label for="email">Email address</label>
+          <span class="email-error" style="display:none"></span>
+        </div>
         <input type="email" id="email" placeholder="email@company.com">
         <button type="submit">Subscribe to monthly newsletter</button>
       </section>
@@ -56,7 +59,7 @@
       <h1>Thanks for subscribing!</h1>
 
       <p>A confirmation email has been sent to <b>ash@loremcompany.com</b>.
-      Please open it and click the button inside to confirm your subscription.</p>
+        Please open it and click the button inside to confirm your subscription.</p>
 
       <button type="button">Dismiss message</button>
     </div>
