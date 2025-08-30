@@ -1,5 +1,5 @@
-const signUpBtn = document.querySelector('button[type="submit"]');
-const dismissBtn = document.querySelector('.success-message button');
+let signUpBtn;
+let dismissBtn;
 
 function showSuccessMessage() {
     const successMessage = document.querySelector('.success-message');
@@ -47,7 +47,6 @@ function clearEmailError() {
 }
 
 function addSubmitEvent() {
-    const signUpBtn = document.querySelector('button[type="submit"]');
     if (signUpBtn) {
         signUpBtn.addEventListener('click', function (e) {
             e.preventDefault();
@@ -65,7 +64,6 @@ function addSubmitEvent() {
 }
 
 function addDismissEvent() {
-    const dismissBtn = document.querySelector('.success-message button');
     if (dismissBtn) {
         dismissBtn.addEventListener('click', function () {
             hideSignUpForm();
@@ -74,6 +72,8 @@ function addDismissEvent() {
 }
 
 function init() {
+    signUpBtn = document.querySelector('button[type="submit"]');
+    dismissBtn = document.querySelector('.success-message button');
     addSubmitEvent();
     addDismissEvent();
 }
