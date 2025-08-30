@@ -11,6 +11,8 @@ function showSuccessMessage() {
 function hideSignUpForm() {
     const successMessage = document.querySelector('.success-message');
     const signUpForm = document.querySelector('.sign-up-form');
+    const emailInput = document.querySelector('input[type="email"]');
+    emailInput.value = '';
     signUpForm.style.display = '';
     successMessage.style.display = 'none';
 }
